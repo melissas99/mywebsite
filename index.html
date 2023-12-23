@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS, Javascript, DOM, jQuery, Web">
+
+    <title>Melissa Spagnolo</title>
+    <meta name="description" content="Web Developer">
+
+    <meta property="og:title" content="Melissa Spagnolo">
+    <meta property="og:site_name" content="Melissa Spagnolo">
+    <meta property="og:url" content="https://melissaspagnolo.netlify.app/">
+    <meta property="og:description" content="Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./banner.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'principale')">Home</a></li>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'chisono')">Chi sono</a></li>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'portfolio')">Progetti</a></li>
+            <li><a href="javascript:onMobileMenuClick('skills.html')">Skills</a></li>
+            <li><a href="javascript:onMobileMenuClick('cv.html')">Cv</a></li>
+            <li><a href="javascript:onMobileMenuClick('contattami.html')">Contattami</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav id="web-navbar">
+            <ul>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'principale')">Home</a></li>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'chisono')">Chi sono</a></li>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'portfolio')">Progetti</a></li>
+                <li><a href="javascript:onDesktopMenuClick('skills.html')">Skills</a></li>
+                <li><a href="javascript:onDesktopMenuClick('cv.html')">Cv</a></li>
+                <li><a href="javascript:onDesktopMenuClick('contattami.html')">Contattami</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-navbar">
+            <img src="img/hamburger.png" id="hamburger" onclick="javascript:openMobileMenu()" />
+        </nav>
+    </header>
+
+
+
+    <section id="principale">
+
+        <section id="intestazione">
+            <h1>Melissa Spagnolo</h1>
+            <h3>Web Developer</h3>
+            <a href="contattami.html" class="btn">Scrivimi</a>
+
+        </section>
+        <section id="sfondo">
+            <div id="cerchio"></div>
+            <img src="img/mely.png" id="propic">
+            <svg width="0" height="0">
+                <defs>
+                    <clipPath id="myClip" color="red" clipPathUnits="objectBoundingBox">
+                        <circle cx="0.5" cy="0.57" r="0.43"></circle>
+                        <circle cx="0.5" cy="0" r="0.5"></circle>
+                    </clipPath>
+                </defs>
+            </svg>
+        </section>
+    </section>
+
+
+    <div class="clear"></div>
+
+
+    <section id="chisono">
+
+        <h3 class="titolo">Chi sono</h3>
+
+
+
+
+        <p class="descrizione">Il mio nome è Melissa, ho 24 anni, da sempre sono stata una persona curiosa e
+            creativa. Mi appassiona viaggiare e adoro affrontare nuove sfide. La mia passione per il disegno, la
+            creazione di contenuti e il mondo dei videogiochi mi ha spinto a cercare costantemente nuovi modi per
+            imparare e crescere.
+
+            Questo desiderio mi ha condotto verso il mondo della programmazione e dell'innovazione. Ho acquisito
+            competenze nei linguaggi web come HTML, CSS e JavaScript, permettendomi di sviluppare siti web di alta
+            qualità. Inoltre, ho padronanza nell'utilizzo di strumenti come Figma e Adobe XD, che mi
+            consentono di creare mockup per applicazioni e siti web con grande efficacia.
+            Sono pronta a mettere in campo la mia passione, creatività e competenze per contribuire in modo
+            significativo a nuovi progetti e sfide,
+            portando un tocco di innovazione e dedizione a ogni opportunità che si presenterà sulla mia strada.</p>
+
+    </section>
+
+
+    <section id="portfolio">
+        <h3 class="titolo">Progetti</h3>
+        <p class="descrizione">Qui puoi vedere alcuni dei miei lavori, per saperne di più scrivimi!</p>
+
+        <div id="galleria">
+            <div class="immagine">
+                <img class="preview" src="img/BC.gif">
+            </div>
+            <div class="immagine">
+                <img class="preview" src="img/SB.gif">
+            </div>
+            <div class="immagine">
+                <img class="preview" src="img/studio.gif">
+            </div>
+            <div class="immagine">
+                <img class="preview" src="img/pizza.gif">
+            </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/melissa-spagnolo-701a0618b/" target="_blank">
+                    <img src="img/linkedin.png" alt="Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MelissaS99" target="_blank">
+                    <img src="img/github.png" alt="Github">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

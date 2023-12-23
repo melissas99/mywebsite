@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS, Javascript, DOM, jQuery, Web">
+
+    <title>Melissa Spagnolo</title>
+    <meta name="description" content="Web Developer">
+
+    <meta property="og:title" content="Melissa Spagnolo">
+    <meta property="og:site_name" content="Melissa Spagnolo">
+    <meta property="og:url" content="https://melissaspagnolo.netlify.app/">
+    <meta property="og:description" content="Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./banner.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'principale')">Home</a></li>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'chisono')">Chi sono</a></li>
+            <li><a href="javascript:onMobileMenuClick('index.html', 'portfolio')">Progetti</a></li>
+            <li><a href="javascript:onMobileMenuClick('skills.html')">Skills</a></li>
+            <li><a href="javascript:onMobileMenuClick('cv.html')">Cv</a></li>
+            <li><a href="javascript:onMobileMenuClick('contattami.html')">Contattami</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav id="web-navbar">
+            <ul>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'principale')">Home</a></li>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'chisono')">Chi sono</a></li>
+                <li><a href="javascript:onDesktopMenuClick('index.html', 'portfolio')">Progetti</a></li>
+                <li><a href="javascript:onDesktopMenuClick('skills.html')">Skills</a></li>
+                <li><a href="javascript:onDesktopMenuClick('cv.html')">Cv</a></li>
+                <li><a href="javascript:onDesktopMenuClick('contattami.html')">Contattami</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-navbar">
+            <img src="img/hamburger.png" id="hamburger" onclick="javascript:openMobileMenu()" />
+        </nav>
+    </header>
+
+    <section id="tabella">
+        <div class="container">
+            <h3 class="titolo">Skill set</h3>
+            <p class="descrizione">Questi sono alcuni dei punti salienti delle mie competenze. Sono consapevole che ci
+                sono sempre nuove cose da imparare e migliorare, e sono aperta a nuove sfide e opportunità che possano
+                aiutarmi a crescere ulteriormente. Sono disponibile a mettere le mie competenze a disposizione per
+                contribuire ai vostri obiettivi e progetti. Non esitate a contattarmi per ulteriori dettagli o per
+                discutere come posso essere d'aiuto. </p>
+            <div id="set">
+                <div class="bar learning" data-skill="NodeJs"></div>
+                <div class="bar back basic" data-skill="JavaScript"></div>
+                <div class="bar back intermediate" data-skill="WordPress"></div>
+                <div class="bar front advanced" data-skill="Css"></div>
+                <div class="bar front expert" data-skill="Html"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/melissa-spagnolo-701a0618b/" target="_blank">
+                    <img src="img/linkedin.png" alt="Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MelissaS99" target="_blank">
+                    <img src="img/github.png" alt="Github">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
